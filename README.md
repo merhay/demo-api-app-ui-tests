@@ -1,9 +1,9 @@
-**Running Mock Tests**
+**Running Mock API Tests**
 ```bash
  mvn test -Dtest=com.moviedb.api.runners.TestRunner -DtestMode=mock
 ```
 
-**Running Integration Tests**
+**Running Integration API Tests**
 ```bash
  mvn test -Dtest=com.moviedb.api.runners.TestRunner
  ```
