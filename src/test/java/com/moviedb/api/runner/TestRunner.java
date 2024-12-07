@@ -1,4 +1,4 @@
-package com.moviedb.api.runners;
+package com.moviedb.api.runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
