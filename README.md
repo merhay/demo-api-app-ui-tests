@@ -2,6 +2,8 @@
 
 This test automation framework is designed for **API, Mobile, and Web testing** of The Movie Database applications. 🚀
 
+---
+
 ## 🛠️ Features
 
 - **API Testing** 🧪: Supports mock and integration tests to validate backend functionality.
@@ -28,7 +30,7 @@ To run the integration API tests, use the following command:
 Note: For demonstration purposes, the movie service API key is stored in the properties file. This approach is not recommended due to security risks. It is intended as a temporary solution solely for demo purposes.
 ***
 
-# MOBILE TESTS (Android)
+# 📱MOBILE TESTS (Android)
 Before running the mobile tests, ensure the following prerequisites are met:
 
 ## Prerequisites
@@ -64,8 +66,8 @@ appium
  mvn test -Dtest=com.moviedb.mobile.runners.TestRunner
 ```
 
-# WEB BROWSER TESTS
-Before running the mobile tests, ensure the following prerequisites are met:
+# 🌐 WEB UI BROWSER TESTS
+Before running the web ui tests, ensure the following prerequisites are met:
 
 ## Prerequisites
 - Java 11
