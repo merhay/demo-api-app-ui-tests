@@ -10,7 +10,7 @@ public class HomePage extends BasePage {
     waitForElementToBeVisible(searchBar);
   }
 
-  public boolean isHomePageDisplayed() {
+  public boolean isNowPlayingSectionDisplayed() {
     return driver.findElement(nowPlayingMovies).isDisplayed();
   }
 }

@@ -4,6 +4,10 @@ Feature: Search for a movie and view its details
   I want to search for a movie
   So that I can view its details
 
+  Scenario: Validate home page film sections
+    Given I have launched the ShowCase app
+    Then I should see the Now Playing movie section
+
   Scenario: Search for a movie by name and view its details
     Given I have launched the ShowCase app
     When I search for a movie named "The Lion King"
