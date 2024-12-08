@@ -21,7 +21,6 @@ public class TheMovieDbSteps {
   }
 
   private void loadConfiguration() {
-    PropertiesUtilities.loadProperties("config.properties");
     baseUrl = PropertiesUtilities.getProperty("base_url");
     apiKey = PropertiesUtilities.getProperty("api_key");
   }

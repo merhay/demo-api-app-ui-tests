@@ -1,4 +1,4 @@
-package com.moviedb.api.utilities;
+package com.moviedb.web.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
