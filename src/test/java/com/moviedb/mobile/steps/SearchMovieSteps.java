@@ -12,6 +12,7 @@ public class SearchMovieSteps {
   @Given("I have launched the ShowCase app")
   public void loadsAppSuccessfully() {
     homePage.waitForAppToLoad();
+    Assert.assertTrue(homePage.isHomePageDisplayed());
   }
 
   @When("I search for a movie named {string}")
@@ -25,13 +26,13 @@ public class SearchMovieSteps {
     Assert.assertTrue(searchResultsPage.isMoviePresentInSearchResults(movieName));
   }
 
-  @Then("I go back to home page by clicking back button")
-  public void clicksBackButtonFromToolbar() {
-    searchResultsPage.clickBackButton();
-  }
-
   @Then("I should see app home page")
   public void validateHomepage() {
     Assert.assertTrue(homePage.isHomePageDisplayed());
+  }
+
+  @Then("I click on the movie with date of {string}")
+  public void clickMovieWithDate(String movieDate) {
+    searchResultsPage.clickMovieWithDate(movieDate);
   }
 }

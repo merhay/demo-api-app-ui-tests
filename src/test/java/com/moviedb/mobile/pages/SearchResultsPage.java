@@ -9,10 +9,9 @@ import java.util.List;
 
 public class SearchResultsPage extends BasePage {
   private By searchInputBox = AppiumBy.id("toolbar");
-  private By backButton = AppiumBy.accessibilityId("Back");
   private By searchLoadSpinner = AppiumBy.id("search_progress_bar");
   private By searchResultMovieTitles = AppiumBy.id("title");
-  private By searchBar = AppiumBy.id("searchbar");
+  private By searchResultMovieDates = AppiumBy.id("date");
 
   public boolean isMoviePresentInSearchResults(String movieName) {
     List<WebElement> searchResults = driver.findElements(searchResultMovieTitles);
@@ -24,11 +23,11 @@ public class SearchResultsPage extends BasePage {
   }
 
   public void waitForSearchBarVisibility() {
-    waitForElementToBeVisible(driver.findElement(searchInputBox));
+    waitForElementToBeVisible(searchInputBox);
   }
 
   public void waitForSearchLoadSpinner() {
-    waitForElementToDisappear(driver.findElements(searchLoadSpinner));
+    waitForElementToDisappear(searchLoadSpinner);
   }
 
   public void enterMovieNameInSearch(String movieName) {
@@ -38,7 +37,13 @@ public class SearchResultsPage extends BasePage {
     action.sendKeys(movieName).perform();
   }
 
-  public void clickBackButton() {
-    driver.findElement(backButton).click();
+  public void clickMovieWithDate(String movieDate) {
+    List<WebElement> dateElements = driver.findElements(searchResultMovieDates);
+    for (WebElement dateElement : dateElements) {
+      if (dateElement.getText().trim().equals(movieDate)) {
+        dateElement.click();
+        break;
+      }
+    }
   }
 }

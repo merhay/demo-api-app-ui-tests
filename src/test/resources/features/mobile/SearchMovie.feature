@@ -1,12 +1,14 @@
 @test
-Feature: Search for a movie
+Feature: Search for a movie and view its details
   As a user of the ShowCase app
   I want to search for a movie
   So that I can view its details
 
-  Scenario: Search for a movie by name
+  Scenario: Search for a movie by name and view its details
     Given I have launched the ShowCase app
-    When I search for a movie named "Inception"
-    Then I should see "Inception" in the search results
-    And I go back to home page by clicking back button
-    And I should see app home page
+    When I search for a movie named "The Lion King"
+    Then I should see "The Lion King" in the search results
+    And I click on the movie with date of "Jun 24, 1994"
+    And I should see the movie details page with:
+      | Title   | The Lion King                                                             |
+      | Tagline | The greatest adventure of all is finding our place in the Circle of Life. |
