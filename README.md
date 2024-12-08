@@ -1,12 +1,14 @@
-# INTRO
-This test automation framework is designed for API and mobile testing of a movie database application. 
- 
-It includes:
-- **API Testing**: Supports mock and integration tests to validate backend functionality.
-- **Mobile Testing** (Android): Uses Appium for automated UI tests on emulators and real devices.
-- **Technologies**: Java, Selenium, and Appium, and powered by Cucumber for BDD, the framework is easy to set up and run using Maven.
-- The framework follows the Page Object Model (POM) design pattern for maintainable and scalable test code.
- ***
+# 🎬 Movie Database Test Automation Framework
+
+This test automation framework is designed for **API and mobile testing** of a movie database application. 🚀
+
+## 🛠️ Features
+
+- **API Testing** 🧪: Supports mock and integration tests to validate backend functionality.
+- **Mobile Testing** 📱 (Android): Uses [Appium](http://appium.io/) for automated UI tests on emulators and real devices.
+- **Technologies** ⚙️: Built with **Java**, **Selenium**, and **Appium**, powered by **Cucumber** for BDD. The framework is simple to set up and run using **Maven**.
+- **Design Pattern** 🏗️: Follows the **Page Object Model (POM)** for maintainable and scalable test code.
+
 
 # API TESTS
 
@@ -60,4 +62,15 @@ appium
 ## Running Android App Tests
 ```bash
  mvn test -Dtest=com.moviedb.mobile.runners.TestRunner
+```
+
+# WEB BROWSER TESTS
+Before running the mobile tests, ensure the following prerequisites are met:
+
+## Prerequisites
+- Java 11
+
+## Running Android App Tests
+```bash
+ mvn test -Dtest=com.moviedb.web.runners.TestRunner
 ```
