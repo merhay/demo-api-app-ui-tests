@@ -1,4 +1,4 @@
-package com.moviedb.mobile.runner;
+package com.moviedb.mobile.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
