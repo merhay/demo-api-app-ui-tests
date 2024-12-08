@@ -1,6 +1,6 @@
-# 🎬 Movies Test Automation Framework
+# 🎬 Movies Database Test Automation Framework
 
-This test automation framework is designed for **API and mobile testing** of a movie database application. 🚀
+This test automation framework is designed for **API, Mobile, and Web testing** of The Movie Database applications. 🚀
 
 ## 🛠️ Features
 
