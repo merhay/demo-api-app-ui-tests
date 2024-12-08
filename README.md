@@ -7,7 +7,7 @@ This test automation framework is designed for **API, Mobile, and Web testing** 
 ## 🛠️ Features
 
 - **API Testing** 🧪: Supports mock and integration tests to validate backend functionality.
-- **Mobile Testing** 📱 (Android): Uses [Appium](http://appium.io/) for automated UI tests on emulators and real devices.
+- **Mobile Testing** 📱: Uses [Appium](http://appium.io/) for automated UI tests on emulators and real devices.
 - **Technologies** ⚙️: Built with **Java**, **Selenium**, and **Appium**, powered by **Cucumber** for BDD. The framework is simple to set up and run using **Maven**.
 - **Design Pattern** 🏗️: Follows the **Page Object Model (POM)** for maintainable and scalable test code.
 
